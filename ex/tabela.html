@@ -4,6 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela</title>
+    <style>
+        body{
+            height:100vh ;
+            font-family: Arial, Helvetica, sans-serif;
+             background-image: url(/imagens/wallpaper004.jpg);
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: cover;
+             background-attachment: fixed;
+
+        }
+        table{
+            width: 400px;
+            height: 600px;
+            border-collapse: collapse;
+        }
+        tr.linha{
+            background-color: gray;
+        }
+
+        
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*alinhamento horinzontal*/
+            vertical-align: middle; /*alinhamento vertical*/
+        }
+        td.numero{
+            text-align: right;
+        }
+        td.dado{
+            background-color: yellow;
+        }
+        tr.dado1{
+            background-color: aquamarine;
+        }
+        tr.dado2{
+            background-color: yellowgreen;
+        }
+        tr.dado3{
+            background-color: violet;
+        }
+        tr.dado4{
+            background-color: blue;
+        }
+        td.numero1{
+            background-color: cadetblue;
+             text-align: center;
+
+             vertical-align:baseline;
+
+        }
+    
+    </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
@@ -12,5 +66,48 @@
     table row = linha de tabela
     table header = cabeçalho de tabela
     table data = dado de tabela-->
+    <table>
+        <tr> <!--primeira linha-->
+            <td class="numero1">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+        <tr class="linha">
+            <td class="numero1">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td class="numero1">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td class="numero1">A4</td>
+            <td class="numero">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr class="dado1">
+            <td class="numero1">A5</td>
+            <td class="numero">B5</td>
+            <td>C5</td>
+        </tr>
+        <tr class="dado2">
+            <td class="numero1">A7</td>
+            <td class="numero">B7</td>
+            <td>C7</td>
+        </tr>
+        <tr class="dado3">
+            <td class="numero1">A8</td>
+            <td>B8</td>
+            <td>C9</td>
+        </tr>
+        <tr class="dado4">
+            <td class="numero1">A9</td>
+            <td class="numero">B9</td>
+            <td>C9</td>
+        </tr>
+    </table>
 </body>
 </html>
