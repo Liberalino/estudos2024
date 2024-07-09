@@ -13,6 +13,7 @@
             width: 500px;
             border-collapse: collapse;
             background-color: rgba(165, 42, 42, 0.397);
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -27,6 +28,12 @@
         thead, tfoot{
             background-color: gray;
             color: aliceblue;
+
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
 
         }
         tbody > tr:nth-child(odd){/*2n-1*/
@@ -202,5 +209,6 @@
         </tfoot>
     
     </table>
+
 </body>
 </html>
